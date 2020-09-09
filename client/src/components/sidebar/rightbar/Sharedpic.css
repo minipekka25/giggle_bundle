@@ -1,0 +1,30 @@
+.shared_photos_heading{
+    margin: 10% 5%;
+    color: #c3c4c5;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Rubik;
+}
+
+.shared_images{
+    display: flex;
+    overflow: auto;
+      flex-wrap: wrap;
+
+}
+
+.shared_photos_image{
+    height: 40%;
+    width: 40%;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.shared_pic_main{
+    height: 45%;
+    overflow: auto;
+}
+
+.shared_pic_main::-webkit-scrollbar {
+  display: none;
+}

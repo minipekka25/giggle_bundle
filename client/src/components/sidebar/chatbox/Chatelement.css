@@ -1,0 +1,56 @@
+.chat_element_profile{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.profile_online{
+    margin-left: -10px;
+}
+
+.chatelement_flex{
+    display: flex;
+    margin:20px
+}
+
+.chat_message_main{
+      background-color: #1e2126;
+    margin-left: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px 20px;
+    position: relative;
+
+}
+
+.profile_name_chat{
+    font-family: Rubik;
+    font-size: 16px;
+    color: #a167ff;
+    margin-bottom: 10px;
+}
+
+.profile_msg_chat{
+     font-family: Rubik;
+    font-size: 12px;
+    color: #868686;
+}
+
+.options_chat{
+    height: 20px;
+    width: 20px;
+    
+}
+
+.options_box{
+    margin-left: 10px;
+    align-items: center;
+display: flex;
+justify-content: center;
+height: 100%;
+}
+
+.options_container{
+    position: relative;
+}

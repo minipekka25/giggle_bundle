@@ -1,0 +1,72 @@
+.side_element_2{
+     display: flex;
+    position: relative;
+    padding: 15px 25px;
+}
+.avatars2{
+    display: flex;
+    padding-top: 11px;
+}
+.avatarone_2{
+    z-index: 3;
+}
+
+.avatartwo_2{
+    z-index: 2;
+}
+
+.avatarone_2 img{
+    width: 30px;
+    height:30px;
+    border-radius: 20px;
+    border: solid 2px #1e2126;
+    filter: drop-shadow(-5px 2px 3px #12171d);
+}
+.avatartwo_2 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: -10px;
+    border: solid 2px #1e2126;
+    filter: drop-shadow(0px -2px 5px #12171d);
+}
+
+.digit{
+    margin-top: 7px;
+      font-size: 14px;
+      margin-left: 5px;
+}
+
+.side_element_2{
+       display: flex;
+    position: relative;
+    padding: 10px 25px;
+     margin: 5px;
+    border-radius: 10px;
+}
+.side_element_2:hover{
+background-color: #12171d;
+    border-radius: 10px;
+}
+
+.channel_name_2{
+    margin-top: 5px;
+    font-size: 14px;
+    padding:  5px 15px;
+    font-weight: 400;
+    color:#f3f4f5;
+}
+
+.channel_msg_2{
+    font-size: 12px;
+      padding:  5px 15px;
+      color:#585858;
+}
+
+.msg_time{
+    font-size: 12px;
+    position: absolute;
+    right: 0px;
+    margin-right: 25px;
+color:#c3c4c5;
+}

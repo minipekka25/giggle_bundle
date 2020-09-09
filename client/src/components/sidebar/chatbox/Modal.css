@@ -1,0 +1,79 @@
+.upload_cont{
+    height: 220px;
+    width: 200px;
+    position: absolute;
+ bottom: 10%;
+ left: 65%;
+ background-color: #1d2026;
+ z-index: 200;
+ filter: drop-shadow(0px 3px 5px #121315d0);
+ border-radius: 8px;
+}
+
+
+
+.upload_img{
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 8%;
+    border: dashed 2px #12171d;
+    border-radius: 5px;
+}
+
+.upload_button{
+
+   color: #f3f4f5;
+    border:0;
+    background-color:#12171d;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 28%;
+    bottom: 12%;
+    font-family: Rubik;
+
+}
+
+.upload_selected{
+    color: #f3f4f5;
+    text-align: center;
+}
+
+.emoji-mart-anchor-bar{
+    background-color: rgb(167 161 169) !important;
+}
+
+.emoji-mart-anchor-selected{
+    color: white !important;
+}
+
+.emoji-mart-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.chat_msg_input_box__suggestions::-webkit-scrollbar {
+  display: none;
+}
+
+.emoji-mart-title-label{
+    color: #999A9C;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Rubik;
+}
+
+.emoji-mart-category-label span {
+    display: block;
+    width: 100%;
+    /* font-weight: 500; */
+    padding: 5px 6px;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, .95);
+}
+
+.emoji-mart-dark .emoji-mart-category-label span {
+    background-color: #222;
+    color: #fff;
+    font-family: Rubik;
+}

@@ -1,0 +1,103 @@
+.chat_user_logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    vertical-align: text-top;
+}
+
+
+
+.chat_block_with_logo{
+   position: relative;
+    font-weight: 700;
+    font-size: 12px;
+
+ padding: 5px;
+
+}
+
+.chat_block_flex{
+ display: flex;
+}
+.chat_block_with_logo:hover{
+    background-color: #f5f7f6;
+    border-radius: 10px;
+}
+span{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.chat_text{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 3px;
+}
+
+.chat_main{
+
+margin-left: 10px;
+}
+
+.chat_block_with_time{
+    position: relative;
+    padding: 5px;
+}
+
+.chat_block_with_time:hover{
+    background-color: #f5f7f6;
+    border-radius: 10px;
+
+}
+
+.chat_time{
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-left: 10px;
+
+}
+
+.chat_text_with_time{
+    margin-left: 10px;
+     font-size: 16px;
+    font-weight: 400;
+   
+}
+
+.chat_wtime_flex{
+    display: flex;
+}
+
+.options_cont{
+    position: absolute;
+    right: 5px;
+    top:5px
+}
+
+.options_icons{
+   height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+.options_buttons{
+background-color: white;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.options_buttons:hover{
+       background-color: #f5f7f6;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.options_buttons_holder{
+    background-color: white;
+    border-radius: 5px;
+    filter: drop-shadow(0px 3px 5px #e6e6e6);
+}

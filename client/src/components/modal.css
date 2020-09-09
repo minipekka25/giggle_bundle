@@ -1,0 +1,100 @@
+.task_add{
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    background-color: #12171d;
+}
+
+.modal_cont{
+    height: 45px;
+        width: 100%;
+}
+
+.add_task_button {
+
+    background: #1e2126;
+    border: dashed 2px #c3c4c5;
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+}
+
+
+.add_task_button_channel {
+
+    background: #1e2126;
+    border: dashed 2px #c3c4c5;
+    border-radius: 5px;
+    width: 80%;
+    height: 35px;
+    margin: 0% 10%;
+}
+
+select:focus{
+    outline: none;
+}
+
+select.channel_select_create {
+    height: 35px;
+    width: 100%;
+    margin: 5% 0%;
+    border-radius: 5px;
+    padding: 0px 5px;
+    background: #12171d;
+    border: 0;
+    color: #c3c4c5;
+    font-family: Rubik;
+    min-width:335px;
+}
+
+.task_add {
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+    background-color: #1e2126;
+    /* margin-left: 50%; */
+    /* margin-right: auto; */
+    padding: 5px 25px;
+}
+
+.modal_head{
+        color: #c3c4c5;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Rubik;
+    font-weight: 600;
+}
+
+.modal_input {
+        height: 30px;
+    background-color: #12171d;
+    border: 0;
+    border-radius: 5px;
+    width: 270px;
+    margin-top: -5px;
+    font-size: 16px;
+    color: #c3c4c5;
+    padding-top:5px ;
+    padding-left: 10px;
+}
+
+.modal_emoji_btn {
+       height: 32px;
+    width: 45px;
+    background-color: #12171d;
+    border: 0;
+    border-radius: 5px;
+    margin: 2px 2px;
+    font-size: 20px;
+}
+
+.create_task_btn {
+    width: 100%;
+    height: 30px;
+    /* margin: 5%; */
+    margin-top: 5%;
+    border-radius: 5px;
+    border: 0;
+    font-family: Rubik;
+    font-size: 16px;
+}

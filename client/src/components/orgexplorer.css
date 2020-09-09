@@ -1,0 +1,140 @@
+.orgexplorer_flex{
+    display: flex;
+}
+.orgexp_main{
+    height: 100vh;
+    background-color: #12171d;
+    color: white;
+}
+
+.create_workspace {
+    margin: 3% 1%;
+   height: 200px;
+    width: 500px;
+    background-color: #1e2126;
+    padding: 20px;
+    filter: drop-shadow(0px 3px 5px #121315d0);
+    border-radius: 5px;
+     z-index: 3;
+}
+
+.join_workspace {
+    margin: 3% 1%;
+   height: 200px;
+    width: 500px;
+    background-color: #1e2126;
+    padding: 20px;
+    filter: drop-shadow(0px 3px 5px #121315d0);
+    border-radius: 5px;
+    z-index: 3;
+}
+
+.orgexplorer_flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.orgexp_title{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.signup_title_orgexp{
+     margin-left: 30%;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.main_logo_orgexp{
+height: 40px;
+    width: 40px;
+    vertical-align: unset;
+    margin-right: 10px;
+    margin-top: 3px;
+
+}
+
+.orgexp_cont {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #585858;
+}
+
+
+.orgexp_button{
+    background-image: linear-gradient(to right,#f55e83 , #d467a0,#be6cb2,#a473c9,#9078da,#747ff2);
+    color: white;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 5px;
+    filter: drop-shadow(0px 0px 7px #fa97f25e);
+    margin: 7% 0%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.no_wrps{
+    height: 150px;
+    width: 150px;
+}
+
+.orgexp_nowrp_anime{
+    position: absolute;
+    bottom: 5px;
+  
+    z-index: 0;
+}
+
+.orgexp_list_main{
+    display: flex;
+    justify-items: flex-end;
+    flex-direction: row-reverse;
+    height: 35%;
+    overflow: auto;
+}
+
+.orgexp_list_inner{
+        width: 400px;
+    margin: 1% 22%;
+}
+
+.orgexp_arrow{
+       height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    right: 10px;
+    position: absolute;
+    background: #12171d;
+    padding: 0px 10px;
+    border-radius: 5px;
+    filter: drop-shadow(0px 3px 5px #121315d0);
+}
+
+.orgexp_list_item {
+        font-family: Rubik;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 10px 20px;
+    position: relative;
+    background-color: #1e2126;
+    padding: 10px;
+        border-radius: 5px;
+        color: white;
+}
+
+.orgexp_list_item:hover{
+     filter: drop-shadow(0px 3px 5px #121315d0);
+}
+
+
+.orgexp_list_main::-webkit-scrollbar {
+  display: none;
+}

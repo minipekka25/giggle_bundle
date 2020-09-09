@@ -1,0 +1,81 @@
+.get_Started_main{
+    height:100vh;
+        background-color: #12171d;
+}
+
+.main_logo{
+      height: 40px;
+    width: 40px;
+    vertical-align: middle;
+   margin-right: 10px;
+
+}
+
+.get_Started_flex{
+    display: flex;
+   background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-size: 10px 10px;
+    height: 100%;
+
+}
+
+.signup_side{
+        width: 470px;
+    background-color: #1e2126;
+    height: 400px;
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    border-radius: 30px;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+
+
+.signup_title{
+ margin-top: 10%;
+    margin-left: 130px;
+}
+
+.signup_text{
+   font-size: 21px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 125px;
+}
+
+.login_button{
+background-image: linear-gradient(to right,#f55e83 , #d467a0,#be6cb2,#a473c9,#9078da,#747ff2);
+    color: white;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 5px;
+    filter: drop-shadow(0px 3px 7px #fa97f29d);
+    margin: 7% 10%;
+    width: 80%;
+    cursor: pointer;
+}
+
+.google_logo{
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.register_text{
+  font-size: 14px;
+    margin-top: 5px;
+    margin-left: 130px;
+    font-weight: 400;
+
+}
+
+.sugnup_link{
+    color: #f55e83;
+    cursor: pointer;
+}

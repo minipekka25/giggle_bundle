@@ -1,0 +1,23 @@
+.chat_options_panel{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.panel_base{
+background-color: #1e2126;
+    color: #f3f4f5;
+    width: 120px;
+    border-radius: 5px;
+}
+
+.chat_options_items{
+    margin: 5px;
+    padding: 10px;
+}
+
+.chat_options_items:hover{
+    background-color: #12171d;
+    border-radius: 5px;
+}

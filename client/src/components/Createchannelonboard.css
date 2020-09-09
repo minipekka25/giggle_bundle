@@ -1,0 +1,11 @@
+.org_id_input{
+  height: 35px;
+    background-color: #12171d;
+    border: 0;
+    margin: 10px 10%;
+    border-radius: 5px;
+    width: 78%;
+    color: white;
+    font-size: 16px;
+    padding-left: 2%;
+}

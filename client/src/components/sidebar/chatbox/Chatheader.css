@@ -1,0 +1,51 @@
+.header_chat{
+    font-family: Rubik;
+    font-weight: 400;
+    color: #f3f4f5;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+.header_emoji{
+    font-size: 20px;
+}
+
+.header_chat_box{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+
+}
+
+.header_profiles{
+    margin-left: auto;
+}
+
+.avatar_prof img {
+  border-radius: 50%;
+  position: relative;
+  left: -5px;
+  margin-left: -7px;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  border:solid 2px #12171d;
+}
+
+.avatars_prof {
+  direction: rtl;  
+  text-align: left;  
+  padding-left: 25px;  
+
+}
+
+
+
+.prof_add{
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #a167ff;
+    padding: 7px;
+}

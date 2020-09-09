@@ -1,0 +1,92 @@
+
+.boxs{
+    position: relative;
+    height: 60px;
+}
+
+.avatars{
+    display: flex;
+    padding-top: 15px;
+}
+.avatarone img{
+    width: 30px;
+    height:30px;
+    border-radius: 20px;
+    margin-top: 8px;
+    border: solid 2px #1e2126;
+    filter: drop-shadow(-5px 2px 3px #111111ef);
+}
+.avatartwo img{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: -13px;
+    margin-left: -20px;
+    border: solid 2px #1e2126;
+    filter: drop-shadow(0px -2px 5px #12171d);
+}
+
+
+.avatarone{
+    z-index: 3;
+}
+.avatartwo{
+    z-index: 2;
+}
+.avatarthree{
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: -25px;
+    margin-top: 8px;
+    border: solid 2px #1e2126;
+    background-color: #a167ff;
+    text-align: center;
+    filter: drop-shadow(0px 2px 7px #12171d);
+  
+    
+}
+
+.digit{
+    margin-top: 7px;
+      font-size: 14px;
+      margin-left: 5px;
+      color:#f3f4f5;
+      font-family: Rubik;
+}
+
+.side_element{
+       display: flex;
+    position: relative;
+    padding: 10px 25px;
+     margin: 5px;
+    border-radius: 10px;
+}
+.side_element:hover{
+background-color: #12171d;
+    border-radius: 10px;
+}
+
+.channel_name{
+    font-size: 14px;
+    padding:  5px 15px;
+    font-weight: 400;
+    color:#f3f4f5;
+    margin-top: 5px;
+}
+
+.channel_msg{
+    font-size: 12px;
+      padding:  5px 15px;
+      color:#c3c4c5;
+}
+
+.msg_time{
+    font-size: 12px;
+    position: absolute;
+    right: 0px;
+    margin-right: 25px;
+color:#c3c4c5;
+}
+
