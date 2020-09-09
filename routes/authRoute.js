@@ -7,7 +7,7 @@ module.exports = (app)=>{
 }))
 
 app.get("/auth/google/callback",passport.authenticate('google'),(req,res)=>{
-    res.redirect('http://localhost:5000/orgexplorer')
+    res.redirect('/orgexplorer')
 })
 
 app.get('/api/current_user',(req,res)=>{
