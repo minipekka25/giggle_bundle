@@ -31,7 +31,7 @@ export default class Orgexplorer extends Component {
 
     getOrgdetails() {
 
-        axios.get('https://giggle2.herokuapp.com/api/get/workspaceslist', { withCredentials: true })
+        axios.get('process.env.API_URL/api/get/workspaceslist', { withCredentials: true })
             .then( (response) => {
                this.setdata(response)
             })
