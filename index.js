@@ -10,7 +10,6 @@ const socketIo = require("socket.io");
 const io = socketIo(server); 
 const bodyParser = require('body-parser')
 const PORT  = process.env.PORT || 5000
-require('./models/User')
 require('./services/passport')
 
 
