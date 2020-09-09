@@ -19,7 +19,6 @@ app.use((req, res, next) => {
         || req.header('x-forwarded-host') || req.header('referer') || req.header('host'));
     res.setHeader('Access-Control-Allow-Credentials', true)
     res.setHeader("Access-Control-Allow-Headers", "content-type");
-    res.setHeader("Content-Type", "application/json;charset=utf-8");
     next()
 });
 
