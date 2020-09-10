@@ -35,7 +35,7 @@ export default class Searchmodal extends Component {
     }
 
     closemodal() {
-        this.setState({ modal: false })
+        this.setState({ results:[],modal: false })
     }
 
 
