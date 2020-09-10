@@ -54,7 +54,7 @@ export default class Searchmodal extends Component {
         this.setState({loading:true})
         axios({
             method: 'GET',
-            url: `http://localhost:5000/api/search/messages/${this.props.collname}/${this.props.schema}/${this.props.ws_id}/${this.state.search}`,
+            url: `/api/search/messages/${this.props.collname}/${this.props.schema}/${this.props.ws_id}/${this.state.search}`,
             withCredentials: true
         }).then((res) => {
            this.setState({results:res.data,loading:false})

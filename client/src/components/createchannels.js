@@ -57,7 +57,7 @@ export default function Createchannel(props) {
     function createchannel() {
         axios({
             method: 'post',
-            url: `http://localhost:5000/api/create/channel/${props.ws_id}`,
+            url: `/api/create/channel/${props.ws_id}`,
             data: {
                 channel_name: inputval,
                 emoji:emoji
@@ -79,7 +79,7 @@ export default function Createchannel(props) {
         }
         axios({
             method: 'post',
-            url: `http://localhost:5000/api/create/direct/${props.ws_id}`,
+            url: `/api/create/direct/${props.ws_id}`,
             data: {
                googleId:b.googleId,
                hash:b.hash
@@ -98,7 +98,7 @@ export default function Createchannel(props) {
     function getdirectslot() {
         axios({
             method: 'GET',
-            url: `http://localhost:5000/api/get/directslot/${props.ws_id}`,
+            url: `/api/get/directslot/${props.ws_id}`,
             withCredentials: true
         }).then((res) => {
             if (res.data.length == 1){

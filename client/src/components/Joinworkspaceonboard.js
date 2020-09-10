@@ -23,7 +23,7 @@ export default class Joinworkspaceonboard extends Component {
     }
 
     getOrgdetails() {
-        axios.get(`http://localhost:5000/api/get/orgname/${this.props.match.params.ws_id}`, { withCredentials: true })
+        axios.get(`/api/get/orgname/${this.props.match.params.ws_id}`, { withCredentials: true })
             .then((response) => {
                 if(response.data.length >= 1){
                     let foundorg = response.data[0]
@@ -42,7 +42,7 @@ export default class Joinworkspaceonboard extends Component {
         var config = {
             withCredentials: true
         };
-        axios.post('http://localhost:5000/api/create/joinmessage', k, config)
+        axios.post('/api/create/joinmessage', k, config)
             .then((response) => {
                 this.setState({ loading: false, next: true })
             })

@@ -48,7 +48,7 @@ export default function Modal1(props) {
     function createTask(){
         axios({
             method: 'post',
-            url: `http://localhost:5000/api/create/task/${props.ws_id}`,
+            url: `/api/create/task/${props.ws_id}`,
             data: {
                 task:inputval,
                 emoji:emoji

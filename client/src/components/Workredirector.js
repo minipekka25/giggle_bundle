@@ -24,7 +24,7 @@ export default class Workredirector extends Component {
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             withCredentials: true
         };
-        axios.post('http://localhost:5000/api/get/workspace/channels', k, config)
+        axios.post('/api/get/workspace/channels', k, config)
             .then((response) => {
                 // console.log(response.data.channels[0])
                 this.redirectd(response, data)

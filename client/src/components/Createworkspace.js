@@ -30,7 +30,7 @@ export default class Createworkspace extends Component {
         var config = {
             withCredentials: true
         };
-        axios.post('http://localhost:5000/api/create/workspace', k, config)
+        axios.post('/api/create/workspace', k, config)
             .then((response) => {
 
                 this.setState({ loading: false, workspace_id:response.data._id, next:true })

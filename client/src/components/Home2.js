@@ -44,7 +44,7 @@ export default class Home2 extends Component {
   componentWillMount() {
    
     this.setState({ loading: true })
-    axios.get('http://localhost:5000/api/authenticated', { withCredentials: true })
+    axios.get('/api/authenticated', { withCredentials: true })
       .then((response) => {
         if (response.data == 'failed') {
           this.props.history.push('/getstarted')
@@ -55,7 +55,7 @@ export default class Home2 extends Component {
       });
     axios
       .get(
-        `http://localhost:5000/api/get/workspace/appdata/${this.props.match.params.ws_id}`,
+        `/api/get/workspace/appdata/${this.props.match.params.ws_id}`,
         { withCredentials: true }
       )
       .then((res) => {
@@ -64,12 +64,12 @@ export default class Home2 extends Component {
         this.setallrecentmessages(res.data)
         this.setState({ nickName: res.data.nickName, profile_pic: res.data.profile_pic, online: true, todo: res.data.todo, status: res.data.status , googleId:res.data.googleId})
       });
-    axios.get(`http://localhost:5000/api/get/workspace/channelmessage/${this.props.match.params.ws_id}/${this.props.match.params.ch_id}`,
+    axios.get(`/api/get/workspace/channelmessage/${this.props.match.params.ws_id}/${this.props.match.params.ch_id}`,
       { withCredentials: true })
       .then((res) => {
         this.setmessages(res.data)
       })
-    axios.get('http://localhost:5000/api/get/workspaceslist', { withCredentials: true })
+    axios.get('/api/get/workspaceslist', { withCredentials: true })
       .then((response) => {
         this.setState({ orgs: response.data.workspaces})
       })
@@ -132,7 +132,7 @@ export default class Home2 extends Component {
   }
 
   updatemessages() {
-    axios.get(`http://localhost:5000/api/get/workspace/channelmessage/${this.props.match.params.ws_id}/${this.props.match.params.ch_id}`,
+    axios.get(`/api/get/workspace/channelmessage/${this.props.match.params.ws_id}/${this.props.match.params.ch_id}`,
       { withCredentials: true })
       .then((res) => {
         this.setmessages(res.data)
@@ -305,7 +305,7 @@ export default class Home2 extends Component {
       var config = {
         withCredentials: true
       };
-    axios.post('http://localhost:5000/api/change/status', k, config)
+    axios.post('/api/change/status', k, config)
         .then((response) => {
           // console.log(response.data.channels[0])
           socket.emit('status_changed', response.data.status)

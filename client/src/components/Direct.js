@@ -39,7 +39,7 @@ export default class Direct extends Component {
   }
 
   componentWillMount() {
-    axios.get('http://localhost:5000/api/authenticated', { withCredentials: true })
+    axios.get('/api/authenticated', { withCredentials: true })
       .then((response) => {
         if (response.data == 'failed') {
           this.props.history.push('/getstarted')
@@ -50,20 +50,20 @@ export default class Direct extends Component {
       });
     axios
       .get(
-        `http://localhost:5000/api/get/workspace/appdata/${this.props.match.params.ws_id}`,
+        `/api/get/workspace/appdata/${this.props.match.params.ws_id}`,
         { withCredentials: true }
       )
       .then((res) => {
         this.setallrecentmessages(res.data)
         this.setState({ nickName: res.data.nickName, profile_pic: res.data.profile_pic, online: true, todo: res.data.todo, status: res.data.status, googleId: res.data.googleId })
       });
-    axios.get(`http://localhost:5000/api/get/workspace/directmessage/${this.props.match.params.ws_id}/${this.props.match.params.dm_id}`,
+    axios.get(`/api/get/workspace/directmessage/${this.props.match.params.ws_id}/${this.props.match.params.dm_id}`,
       {withCredentials:true} )
       .then((res)=>{
           this.setmessages(res.data)
       })
 
-    axios.get('http://localhost:5000/api/get/workspaceslist', { withCredentials: true })
+    axios.get('/api/get/workspaceslist', { withCredentials: true })
       .then((response) => {
         this.setState({ orgs: response.data.workspaces })
       })
@@ -73,7 +73,7 @@ export default class Direct extends Component {
   }
 
   updatemessages() {
-    axios.get(`http://localhost:5000/api/get/workspace/directmessage/${this.props.match.params.ws_id}/${this.props.match.params.dm_id}`,
+    axios.get(`/api/get/workspace/directmessage/${this.props.match.params.ws_id}/${this.props.match.params.dm_id}`,
       { withCredentials: true })
       .then((res) => {
         this.setmessages(res.data)
@@ -336,7 +336,7 @@ export default class Direct extends Component {
     var config = {
       withCredentials: true
     };
-    axios.post('http://localhost:5000/api/change/status', k, config)
+    axios.post('/api/change/status', k, config)
       .then((response) => {
         socket.emit('status_changed', response.data.status)
 

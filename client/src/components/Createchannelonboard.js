@@ -23,7 +23,7 @@ export default class Createchannelonboard extends Component {
         var config = {
             withCredentials: true
         };
-        axios.post('http://localhost:5000/api/create/channel/onboard', k, config)
+        axios.post('/api/create/channel/onboard', k, config)
             .then((response) => {
                 this.setState({ loading: false, next: true })
             })

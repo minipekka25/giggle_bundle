@@ -21,7 +21,7 @@ export default class Searchorgs extends Component {
     }
 
     componentWillMount(){
-        axios.get('http://localhost:5000/api/authenticated', { withCredentials: true })
+        axios.get('/api/authenticated', { withCredentials: true })
             .then((response) => {
                 if (response.data == 'failed') {
                     this.props.history.push('/getstarted')
@@ -39,7 +39,7 @@ export default class Searchorgs extends Component {
     }
 
     getOrgdetails(data) {
-        axios.get(`http://localhost:5000/api/get/orgname/${data}`, { withCredentials: true })
+        axios.get(`/api/get/orgname/${data}`, { withCredentials: true })
             .then((response) => {
                 if (response.data.length >= 1) {
                     let foundorg = response.data[0]
@@ -59,7 +59,7 @@ export default class Searchorgs extends Component {
             var config = {
                 withCredentials: true
             };
-            axios.post('http://localhost:5000/api/join/workspace', k, config)
+            axios.post('/api/join/workspace', k, config)
                 .then((response) => {
                     this.setState({ loading: false, next: true })
                     socket.emit('created_channel', 'new channel created')

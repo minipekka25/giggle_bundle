@@ -37,7 +37,7 @@ export default class Uploadhandler extends Component {
         if (selectedFiles) {
             for (let i = 0; i < selectedFiles.length; i++) {
                 data.append('photos', selectedFiles[i], selectedFiles[i].name);
-            } axios.post('http://localhost:5000/api/upload', data, {
+            } axios.post('/api/upload', data, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 }, onUploadProgress: (progress) => {

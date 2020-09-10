@@ -26,7 +26,7 @@ export default class Getstarted extends Component {
                         Login to your account
                     </div>
                         <div><a href='/auth/google' ><button className='login_button'><img className='google_logo' src={google} />With Google</button></a></div>
-                        <div className='register_text'>Don't have an account ? <a href='/google' ><span className='sugnup_link'>Sign Up.</span></a></div>
+                        <div className='register_text'>Don't have an account ? <a href='/auth/google' ><span className='sugnup_link'>Sign Up.</span></a></div>
                     </div>
                     
                   
