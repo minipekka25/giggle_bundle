@@ -372,7 +372,7 @@ export default class Home2 extends Component {
 
             <div className="felx_top">
               {this.state.orgs.length >= 1 && this.state.orgs.map((i) => <Link to={{ pathname: `/workspace/redirect/${i._id}` }}><span className="side_logo" >{i.emoji}</span></Link>)}
-              <Link to={{ pathname: "/create/workspace" }}>  <div className="add_workspace_div"><img className="add_workspace_logo" src={add} /></div></Link>
+              <Link to={{ pathname: "/create/workspace" }}>  <div><span className="side_logo" >➕</span></div></Link>
               
             </div>
           </div>
